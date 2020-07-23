@@ -4,6 +4,9 @@ on:
   issues:
     types: [opened, edited, closed, deleted, reopened, labeled, unlabeled]
 
+  issue_comment:
+    types: [created, edited, deleted]
+
 jobs:
   build:
     runs-on: ubuntu-latest
