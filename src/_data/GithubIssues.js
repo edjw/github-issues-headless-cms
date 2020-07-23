@@ -76,10 +76,12 @@ async function getIssues(repository) {
           .map(async (issue) => {
             return {
               id: String(issue.id),
+              issueNumber: String(issue.number),
               url: issue.html_url,
               title: issue.title,
               postContent: issue.body,
               date: issue.created_at,
+              author: issue.user.login
               tags:
                 showLabels == true && issue.labels.length > 0
                   ? issue.labels
