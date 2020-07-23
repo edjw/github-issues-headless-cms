@@ -63,7 +63,7 @@ title: {{ post.title | string }}
             </ul>
 
             <section>
-                <a href="https://github.com/{{ siteSettings.repository }}/issues/{{ post.id | string }}#issue-comment-box">Leave a comment</a>
+                <a href="https://github.com/{{ siteSettings.repository }}/issues/{{ post.issueNumber | string }}#issue-comment-box">Leave a comment</a>
             </section>
         {% endif %}
     </article>
