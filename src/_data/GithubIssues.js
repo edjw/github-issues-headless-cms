@@ -81,7 +81,7 @@ async function getIssues(repository) {
               title: issue.title,
               postContent: issue.body,
               date: issue.created_at,
-              author: issue.user.login
+              author: issue.user.login,
               tags:
                 showLabels == true && issue.labels.length > 0
                   ? issue.labels
